@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <title>ScheDOler</title>
+    <link rel = "stylesheet" href = "../css/authorization.css">
+    <script src = "../js/sqlconnect.js"></script>
+    <script src = "../js/register.js"></script>
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "logo">
+            <img class = "logo-img" src = "../img/logo.png" alt = "ScheDOler">
+        </div>
+
+        <div class = "header">
+            <p>Registration</p>
+        </div>
+
+        <div class = "inputs">
+            <input class = "data" type = "text" id = "name" placeholder = "name" pattern = "^[A-Za-z]{2,30}$">
+        </div>
+        <div class = "inputs">
+            <input class = "data" type = "email" id = "email" placeholder = "e-mail">
+        </div>  
+        <div class = "inputs">
+            <input class = "data" type = "password" id = "password" placeholder = "password" pattern = "^.{5,30}$">
+        </div>
+
+        <div class = "send">
+            <input onClick = "userRegister()" class = "button" type = "button" value = "Register">
+        </div>
+    
+        <div class = "account">
+            <p class = "no-account">Have an account already? <a class = "no-account" href = "login.html">Log in!</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

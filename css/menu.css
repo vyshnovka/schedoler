@@ -1,0 +1,279 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: arial, arial;
+	user-select: none;
+}
+
+.page {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.topmenu {
+	width: 100%;
+	height: 13%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	box-shadow: 0 5px 10px -5px #dadada;
+	z-index: 9;
+}
+
+.logo {
+	width: 5.5%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.menuIcon {
+	width: 100%;
+	height: 30%;
+	background-image: url(../img/menu.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.addIcon {
+	width: 30%;
+	height: 40%;
+	background-image: url(../img/plus.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.today {
+	width: 73%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.dateToday {
+	margin-bottom: 0.3vw;
+	font-size: 2vw;
+	font-weight: 600;
+	color: #1d1d1d;
+}
+
+.dateChoosen {
+	font-size: 1.4vw;
+	color: #9c9c9c;
+}
+
+.display {
+	width: 27%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.nextprev {
+	margin: 0 1vw;
+	width: 5%;
+	height: 5vh;
+	cursor: pointer;
+}
+
+.prev {
+	background-image: url(../img/prev.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.next {
+	background-image: url(../img/next.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.displayButton {
+	width: 20%;
+	height: 9vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	color: #1d1d1d;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.displayButton:hover {
+	background-color: #f2f2f2;
+}
+
+.mainContainer {
+	width: 100%;
+	height: 86%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.leftmenu {
+	width: 15%;
+	height: 86%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	top: 13.5%;
+	z-index: 11;
+	transition: all .3s ease;
+}
+
+.leftclose {
+	transform: translateX(-100%);
+}
+
+.leftmenu1 {
+	width: 5%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: #f2f2f2;
+}
+
+.backmenu {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(34, 34, 34, 0.3);
+	position: fixed;
+	z-index: 10;
+}
+
+.line {
+	margin: 0.5vw 0;
+	width: 100%;
+	border-bottom: 0.1vw solid #F2F2F2;
+}
+
+.greyText {
+	margin: 0 2vw;
+	color: #1d1d1d;
+	font-size: 1vw;
+	font-weight: 600;
+}
+
+.greyText p {
+	padding: 0.5vw 0 0.8vw 0;
+	margin: 0;
+}
+
+.option {
+	width: 100%;
+	height: 6%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	color: #1d1d1d;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.option:hover, .option1:hover {
+	background-color: #f2f2f2;
+}
+
+.optionLogo {
+	margin: 0 2vw;
+	width: 1.6vw;
+	height: 1.6vw;
+}
+
+.optionLogo img, .optionLogo1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.optionText {
+	font-size: 1vw;
+}
+
+.textMargin {
+	margin-top: 0.5vw;
+}
+
+.option1 {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #1d1d1d;
+	cursor: pointer;
+}
+
+.optionLogo1 {
+	margin: 0 2vw;
+	width: 2vw;
+	height: 2vw;
+}
+
+.copyright {
+	margin: 0 2vw;
+	position: absolute;
+	bottom: 0;
+	font-size: 0.8vw;
+	color: #3f3f3f;
+}
+
+.content {
+	width: 95%;
+	height: 100%;
+}
+
+.choosenLeft {
+	width: 100%;
+	height: 6%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #e6e6e6;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.choosenTop {
+	width: 20%;
+	height: 9vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #e6e6e6;
+	font-weight: 600;
+	cursor: pointer;
+}

@@ -1,0 +1,175 @@
+.planForm, .repeatForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.addMargin {
+	margin: 1vw 0;
+}
+
+.planNameDate {
+	display: flex;
+	flex-direction: row;
+}
+
+.planDescriptionCategory {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.planPlaceUrgency {
+	display: flex;
+	flex-direction: row;
+}
+
+.data, .repeatDate {
+	padding: 0 0.5vw;
+	margin: 0 1.5vw;
+	width: 14vw;
+	height: 3vw;
+}
+
+/* .data:invalid {
+	border-bottom: 0.17vw solid #a81c28;
+} */
+
+textarea {
+	padding: 0.5vw;
+	margin: 0 2vw 0 0;
+    width: 22vw;
+	height: 5vw;
+}
+
+input, textarea {
+	font-family: arial, arial;
+	font-size: 1.2vw;
+	border: none;
+  	border-bottom: 0.17vw solid #9a9a9b;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border: none;
+  	border-bottom: 0.17vw solid #737373;
+	background-color: #fafafa;
+}
+
+input::selection, textarea::selection {
+	background-color: #e3e4ec;
+}
+
+input::-webkit-input-placeholder { 
+	color: rgba(0, 0, 0, 0.3); 
+}
+
+textarea::-webkit-input-placeholder { 
+	color: rgba(0, 0, 0, 0.3); 
+}
+
+.customSelect {
+	padding: 0 0.5vw;
+	width: 8vw;
+	height: 3vw;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 1.2vw;
+	border: none;
+	border-bottom: 0.17vw solid #9a9a9b;
+}
+
+.customSelect:focus {
+	background-color: #fafafa;
+	color: black;
+	outline: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+	font-size: 1.6vw;
+	cursor: pointer;
+	background-color: #2496d1;
+	border: none;
+	border-radius: 0.5vw;
+	color: #f0f0f0;
+	text-align: center;
+	transition: 0.1s ease-in;
+}
+
+.button:hover {
+	background-color: #9a9a9b;
+	color: #f0f0f0;
+}
+
+.button:focus {
+	background-color: #737373;
+	color: #f0f0f0;
+	border: none;
+}
+
+.type {
+    margin: 0 0.5vw;
+    width: 10vw;
+	height: 3vw;
+}
+
+.create {
+    width: 21vw;
+	height: 3vw;
+	position: absolute;
+	right: 3vw;
+	bottom: 3vw;
+}
+
+.planType {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeStartEnd {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+}
+
+.urgencyBlock {
+	margin: 0 1.5vw;
+	width: 15vw;
+	height: 3.17vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 1.2vw;
+	background-color: white;
+}
+
+.urgencyBlock p {
+	padding: 0 0.5vw;
+	margin: 0;
+	position: relative;
+	top: 0.3vw;
+}
+
+.urgencyTask {
+	margin: 0;
+	width: 15vw;
+	height: 1vw;
+	position: relative;
+	top: 0.6vw;
+}

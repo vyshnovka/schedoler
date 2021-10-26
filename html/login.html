@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <title>ScheDOler</title>
+    <link rel = "stylesheet" href = "../css/authorization.css">
+    <script src = "../js/sqlconnect.js"></script>
+    <script src = "../js/login.js"></script>
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "logo">
+            <img class = "logo-img" src = "../img/logo.png" alt = "ScheDOler">
+        </div>
+
+        <div class = "header">
+            <p>Authorization</p>
+        </div>
+
+        <div class = "inputs">
+            <input class = "data" type = "email" id = "email" placeholder = "e-mail">
+        </div>  
+        <div class = "inputs">
+            <input class = "data" type = "password" id = "password" placeholder = "password">
+        </div>
+
+        <div class = "send">
+            <input onClick = "userLogin()" class = "button" type = "button" value = "Log in">
+        </div>
+    
+        <div class = "account">
+            <p class = "no-account">Don't have an account yet? <a class = "no-account" href = "register.html">Register!</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

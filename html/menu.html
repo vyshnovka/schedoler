@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset = "UTF-8">
+	<title>ScheDOler</title>
+	<link rel = "stylesheet" href = "../css/animate.css">
+	<link rel = "stylesheet" href = "../css/loading.css">
+	<link rel = "stylesheet" href = "../css/menu.css">
+	<link rel = "stylesheet" href = "../css/newplan.css">
+	<link rel = "stylesheet" href = "../css/day.css">
+	<link rel = "stylesheet" href = "../css/week.css">
+	<link rel = "stylesheet" href = "../css/month.css">
+	<script src = "../js/sqlconnect.js"></script>
+	<script src = "../js/loading.js"></script>
+</head>
+
+<body onLoad = "out()">
+	<div class = "loading" id = "loading">
+		<div class = "spinner"></div>
+	</div>
+
+	<div class = "page">
+		<div class = "topmenu">
+			<div class = "logo">
+				<div class = "menuIcon" title = "Menu" onClick = "hamburger()"></div>
+			</div>
+
+			<div class = "today">
+				<div class = "dateToday" title = "Today" id = "today"></div>
+				<div class = "dateChoosen" id = "choosen"></div>
+			</div>
+			
+			<div class = "display">
+				<div class = "nextprev prev" title = "Previous" onClick = "prev()"></div>
+				<div class = "displayButton" id = "day" onClick = "showDay(today);">
+					<div class = "optionLogo1">
+						<img src = "../img/day.png">
+					</div>
+					<div class = "optionText textMargin">
+						Day
+					</div>
+				</div>
+				<div class = "choosenTop" onClick = "showWeek(); changeDisplay(this);">
+					<div class = "optionLogo1">
+						<img src = "../img/week.png">
+					</div>
+					<div class = "optionText textMargin">
+						Week
+					</div>
+				</div>
+				<div class = "displayButton" onClick = "showMonth(); changeDisplay(this);">
+					<div class = "optionLogo1">
+						<img src = "../img/month.png">
+					</div>
+					<div class = "optionText textMargin">
+						Month
+					</div>
+				</div>
+				<div class = "nextprev next" title = "Next" onClick = "next()"></div>
+			</div>
+		</div>
+
+		<div class = "mainContainer">
+			<div class = "leftmenu1" id = "leftmenu1">
+				<div class = "option1" title = "Create new plan" onClick = "newPlanForm()">
+					<div class = "optionLogo1">
+						<img src = "../img/plus.png">
+					</div>
+				</div>
+
+				<div class = "option1" title = "Today" onClick = "showDay(today);">
+					<div class = "optionLogo1">
+						<img src = "../img/today.png">
+					</div>
+				</div>
+			</div>
+
+			<div class = "leftmenu leftclose" id = "leftmenu">
+				<div class = "option" onClick = "newPlanForm()">
+					<div class = "optionLogo">
+						<img src = "../img/plus.png">
+					</div>
+					<div class = "optionText">
+						Create new plan
+					</div>
+				</div>
+
+				<div class = "option" title = "Today" onClick = "showDay(today);">
+					<div class = "optionLogo">
+						<img src = "../img/today.png">
+					</div>
+					<div class = "optionText">
+						Today
+					</div>
+				</div>
+				
+				<div class = "line"></div>
+				<div class = "greyText">
+					<p>CATEGORY</p>
+				</div>
+
+				<div class = "choosenLeft" onClick = "setCategory(undefined, this)">
+					<div class = "optionLogo">
+						<img src = "../img/all1.png">
+					</div>
+					<div class = "optionText">
+						All
+					</div>
+				</div>
+	
+				<div class = "option" onClick = "setCategory('Work', this)">
+					<div class = "optionLogo">
+						<img src = "../img/work1.png">
+					</div>
+					<div class = "optionText">
+						Work
+					</div>
+				</div>
+	
+				<div class = "option" onClick = "setCategory('Study', this)">
+					<div class = "optionLogo">
+						<img src = "../img/study1.png">
+					</div>
+					<div class = "optionText">
+						Study
+					</div>
+				</div>
+	
+				<div class = "option" onClick = "setCategory('Home', this)">
+					<div class = "optionLogo">
+						<img src = "../img/home1.png">
+					</div>
+					<div class = "optionText">
+						Home
+					</div>
+				</div>
+	
+				<div class = "option" onClick = "setCategory('Sport', this)">
+					<div class = "optionLogo"> 
+						<img src = "../img/sport1.png">
+					</div>
+					<div class = "optionText">
+						Sport
+					</div>
+				</div>
+	
+				<div class = "option" onClick = "setCategory('Social', this)">
+					<div class = "optionLogo">
+						<img src = "../img/social1.png">
+					</div>
+					<div class = "optionText">
+						Social
+					</div>
+				</div>
+	
+				<div class = "option" onClick = "setCategory('Hobby', this)">
+					<div class = "optionLogo">
+						<img src = "../img/hobby1.png">
+					</div>
+					<div class = "optionText">
+						Hobby
+					</div>
+				</div>
+	
+				<div class = "option" onClick = "setCategory('Other', this)">
+					<div class = "optionLogo">
+						<img src = "../img/other1.png">
+					</div>
+					<div class = "optionText">
+						Other
+					</div>
+				</div>
+
+				<div class = "line"></div>
+
+				<div class = "option"">
+					<div class = "optionLogo">
+						<img src = "../img/help.png">
+					</div>
+					<div class = "optionText">
+						Help
+					</div>
+				</div>
+				
+				<div class = "option" onClick = "location.href = 'login.html'">
+					<div class = "optionLogo">
+						<img src = "../img/exit.png">
+					</div>
+					<div class = "optionText">
+						Not your plans?
+					</div>
+				</div>
+	
+				<div class = "copyright">
+					<p title = "All Rights Reserved">© 2021, Abalina Inc.</p>
+				</div>
+			</div>
+
+			<div class = "backmenu" id = "backmenu" onClick = "hamburger()"></div>
+			<div class = "content" id = "content">
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src = "../js/menu.js"></script>
+<script src = "../js/newplan.js"></script>
+<script src = "../js/day.js"></script>
+<script src = "../js/week.js"></script>
+<script src = "../js/month.js"></script>
+<script src = "../js/calendar.js"></script>
+
+</html>
