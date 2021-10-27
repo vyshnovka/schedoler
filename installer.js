@@ -10,7 +10,7 @@ const msiCreator = new MSICreator({
 
     exe: 'ScheDOler',
     name: 'ScheDOler',
-    manufacturer: 'zh_vikulishna',
+    manufacturer: 'vyshnovka',
     version: '1.0.0',
 
     ui: {
