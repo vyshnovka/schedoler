@@ -1,6 +1,6 @@
 # ScheDOler
 
-![image](/img/logo.png) 
+![image](/img/icon.png) 
 
 ## Tools
 
