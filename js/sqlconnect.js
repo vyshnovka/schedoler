@@ -5,6 +5,6 @@ var db = new sqlite3.Database(require("electron").remote.getGlobal("user").index
         console.error(err.message);
     }
     else {
-        console.log("Database connection: success...");
+        console.log("Database connection: success!");
     }
 });
