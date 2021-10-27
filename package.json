@@ -1,7 +1,7 @@
 {
   "name": "schedoler",
   "version": "1.0.0",
-  "description": "",
+  "description": "scheduling app for desktop",
   "main": "index.js",
   "scripts": {
     "start": "electron ."
