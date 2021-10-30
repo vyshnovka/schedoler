@@ -11,7 +11,7 @@ By now this is an offline desktop application, but maybe someday it will be poss
 
 ## Setup
 
-
+> not done yet, sorry not sorry
 
 ## Build
 
