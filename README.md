@@ -12,6 +12,10 @@ By now this is an offline desktop application, but maybe someday it will be poss
 
 ## Setup
 
+_If you are not planning to change the source code, skip this step and go straight forward to installation._   
+
+> not done yet, sorry not sorry
+
 The only problem is the **sqlite3** module, which has brutally destroyed a huge amount of my nerve cells.   
 This module is not intended to work on Windows, and manual rebuild for some reason did not help, so the only solution is to download it directly from official website.   
 `npm install sqlite3 --build-from-source –runtime=electron –target=[electron-version] --dist-url=https://electronjs.org/headers`
