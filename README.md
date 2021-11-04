@@ -12,8 +12,10 @@ By now this is an offline desktop application, but maybe someday it will be poss
 
 ## Installation
 
-If you have **Windows x64**, just simply download the installer from the latest released version in **Releases**. That's all.   
-If not, try following steps below.   
+Just simply download the installer from the latest released version in **Releases**.   
+That's all.   
+   
+If there is no suitable installer, try following steps below to rebuild this project.   
 
 ##   
 
