@@ -10,29 +10,7 @@ By now this is an offline desktop application, but maybe someday it will be poss
 ![image](https://img.shields.io/badge/Electron-31374d?style=for-the-badge&logo=electron&logoColor=white) 
 ![image](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) 
 
-## Installation
-
-Just simply download the installer from the latest released version in **Releases**.   
-That's all.   
-   
-If there is no suitable installer, try following steps below to rebuild this project.   
-
-##   
-
-> not done yet, sorry not sorry   
-
-##   
 ## Setup
 
-_If you are not planning to change the source code, skip this step and go straight forward to installation._   
-
-The only problem is the **sqlite3** module, which has brutally destroyed a huge amount of my nerve cells.   
-This module is not intended to work on Windows, and manual rebuild for some reason did not help, so the only solution is to download it directly from official website.   
-`npm install sqlite3 --build-from-source –runtime=electron –target=[electron-version] --dist-url=https://electronjs.org/headers`
-
-## Build
-
-Optionally you can rebuild this project and even create a new installer. All packages are included.   
-1. Rebuild using `electron-packager ./ --platform=[your_platform] --arch=[x32/x64/x86]  ScheDOler`.   
-2. To create a new installer go to **installer.js** and change line 4: `const APP_DIR = path.resolve(__dirname, './[name_of_just_created_folder]');`. 
-3. Use `node installer.js` after.
+Just simply download the suitable installer from the latest released version in **Releases**.   
+That's all.   
