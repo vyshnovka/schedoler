@@ -10,20 +10,22 @@ By now this is an offline desktop application, but maybe someday it will be poss
 ![image](https://img.shields.io/badge/Electron-31374d?style=for-the-badge&logo=electron&logoColor=white) 
 ![image](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) 
 
-## Setup
-
-_If you are not planning to change the source code, skip this step and go straight forward to installation._   
-
-> not done yet, sorry not sorry
-
-The only problem is the **sqlite3** module, which has brutally destroyed a huge amount of my nerve cells.   
-This module is not intended to work on Windows, and manual rebuild for some reason did not help, so the only solution is to download it directly from official website.   
-`npm install sqlite3 --build-from-source –runtime=electron –target=[electron-version] --dist-url=https://electronjs.org/headers`
-
 ## Installation
 
 If you have Windows x64, just simply download the installer from released version. That's all.   
 If not, try following steps below.   
+
+##   
+##   
+## Setup
+
+> not done yet, sorry not sorry
+
+_If you are not planning to change the source code, skip this step and go straight forward to installation._   
+
+The only problem is the **sqlite3** module, which has brutally destroyed a huge amount of my nerve cells.   
+This module is not intended to work on Windows, and manual rebuild for some reason did not help, so the only solution is to download it directly from official website.   
+`npm install sqlite3 --build-from-source –runtime=electron –target=[electron-version] --dist-url=https://electronjs.org/headers`
 
 ## Build
 
