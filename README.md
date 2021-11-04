@@ -20,7 +20,8 @@ This module is not intended to work on Windows, and manual rebuild for some reas
 
 Optionally you can rebuild this project and even create a new installer. All packages are included.   
 1. Rebuild using `electron-packager ./ --platform=[your_platform] --arch=[x32/x64/x86]  ScheDOler`.   
-2. To create a new installer firstly go to installer.js and change line 4: `const APP_DIR = path.resolve(__dirname, './[name_of_just_created_folder]');`. Use `node installer.js` after.
+2. To create a new installer go to installer.js and change line 4: `const APP_DIR = path.resolve(__dirname, './[name_of_just_created_folder]');`. 
+3. Use `node installer.js` after.
 
 ## Installation
 
