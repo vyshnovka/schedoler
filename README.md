@@ -12,14 +12,15 @@ By now this is an offline desktop application, but maybe someday it will be poss
 
 ## Installation
 
-If you have Windows x64, just simply download the installer from released version. That's all.   
+If you have Windows x64, just simply download the installer from the latest released version in Releases. That's all.   
 If not, try following steps below.   
 
 ##   
+
+> not done yet, sorry not sorry   
+
 ##   
 ## Setup
-
-> not done yet, sorry not sorry
 
 _If you are not planning to change the source code, skip this step and go straight forward to installation._   
 
