@@ -2,8 +2,6 @@
 
 ScheDOler is an application for scheduling tasks and organizing personal time. Nothing innovative, just everything you need (almost).   
 By now this is an offline desktop application, but maybe someday it will be possible to use it cross-platform.   
-   
-Feel free to report bugs.
 
 ## Tools
 
@@ -15,4 +13,4 @@ Feel free to report bugs.
 ## Setup
 
 Just simply download the suitable installer from the latest released version in **Releases**.   
-That's all.   
+That's all.  
