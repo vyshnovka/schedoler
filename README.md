@@ -14,5 +14,5 @@ By now this is an offline desktop application, but maybe someday it will be poss
 
 ## Setup
 
-Just simply download the suitable installer from the latest released version in **Releases**.   
-That's all.  
+1. Download the suitable installer from the latest released version in **Releases**.   
+2. That's all.  
