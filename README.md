@@ -1,6 +1,9 @@
 # ScheDOler
 
-ScheDOler is an application for scheduling tasks and organizing personal time. Nothing innovative, just everything you need (almost).   
+ScheDOler is an application for scheduling tasks and organizing personal time. Nothing innovative, just everything you need (almost).
+
+The application allows you to create and manage two types of plans: events and tasks. Events have a specific time and place, and tasks can be marked as completed. All the plans have three options for displaying: in a specific day, for a week or for a month.
+
 By now this is an offline desktop application, but maybe someday it will be possible to use it cross-platform.   
 
 ## Tools
